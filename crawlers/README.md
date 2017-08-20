@@ -28,3 +28,14 @@ Construir um robô que nos envie essa lista via Telegram sempre que receber o co
 
 
 Qualquer método para coletar os dados é válido. Caso não saiba por onde começar, procure por SeleniumHQ (Java), PhantomJS (Javascript) e Scrapy (Python).
+
+### Execução do código
+
+Compile o código com o comando abaixo.
+```
+./gradlew clean build
+```
+
+Para a parte 1, execute a classe App entrando com uma lista de subreddits separados por ponto-e-vírgula (`;`). A saída será uma lista com as top *threads* do momento no Reddit.
+
+Para a parte 2, execute a classe Bot e abra o Telegram. Pesquise pelo bot `@QuimeraBot` e, dentro do chat com o mesmo, digite `/NadaPraFazer` seguido de uma lista de subreddits separados por ponto-e-vírgula (`;`). (ex.: `/NadaPraFazer programming;dogs;brazil`).
