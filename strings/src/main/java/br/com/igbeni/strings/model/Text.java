@@ -10,6 +10,8 @@ import java.util.StringTokenizer;
 
 /**
  * Class for a text model.
+ *
+ * @author Iggor Alves
  */
 public class Text {
     private List<String> lines;

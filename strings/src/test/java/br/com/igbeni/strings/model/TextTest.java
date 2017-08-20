@@ -11,7 +11,9 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 /**
- * Class to test {@link Text}.
+ * Test suite for {@link Text}.
+ *
+ * @author Iggor Alves
  */
 public class TextTest {
     @Nullable

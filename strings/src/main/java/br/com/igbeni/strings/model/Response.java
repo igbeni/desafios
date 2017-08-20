@@ -6,6 +6,7 @@ import javax.ws.rs.core.Response.Status;
  * Object representing the server's response.
  *
  * @param <T> Response class.
+ * @author Iggor Alves
  */
 public class Response<T> {
     private Status status;
@@ -25,7 +26,7 @@ public class Response<T> {
     /**
      * Construts a {@link Response} instance with status {@link Status#OK}.
      *
-     * @param data   Response data.
+     * @param data Response data.
      */
     public Response(T data) {
         this.status = Status.OK;
@@ -34,6 +35,7 @@ public class Response<T> {
 
     /**
      * Function to get the response status.
+     *
      * @return Response status.
      */
     public Status getStatus() {
@@ -42,6 +44,7 @@ public class Response<T> {
 
     /**
      * Function to get the response data.
+     *
      * @return Response data.
      */
     public T getData() {

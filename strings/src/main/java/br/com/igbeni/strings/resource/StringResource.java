@@ -12,11 +12,23 @@ import javax.ws.rs.core.MediaType;
 import static br.com.igbeni.strings.model.Text.*;
 import static javax.ws.rs.core.Response.Status;
 
+/**
+ * API to format a text.
+ *
+ * @author Iggor Alves
+ */
 @Path("/strings")
 @Consumes(MediaType.TEXT_PLAIN)
 @Produces(MediaType.APPLICATION_JSON)
 public class StringResource {
 
+    /**
+     * Endpoint to format a text.
+     *
+     * @param data Input data.
+     * @return A json object.
+     * @throws JSONException Exception when an error occurs when creating a json object.
+     */
     @POST
     @Timed
     public Response formatText(String data) throws JSONException {

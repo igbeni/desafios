@@ -4,6 +4,11 @@ import org.junit.Test;
 
 import javax.ws.rs.core.Response.Status;
 
+/**
+ * Test suite for {@link Response}.
+ *
+ * @author Iggor Alves
+ */
 public class ResponseTest {
     private Response<? extends Object> response;
     private Status status;
